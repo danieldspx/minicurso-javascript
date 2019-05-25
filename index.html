@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Projeto Final</title>
+    <!-- Incluir o normalize.css -->
+    <link type="text/css" rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+    <!-- Incluir os icontes do Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Incluir o Material Design Lite -->
+    <link rel="stylesheet" href="./node_modules/material-design-lite/material.min.css">
+    <!-- Icones MDI -->
+    <link type="text/css" rel="stylesheet" href="./node_modules/@mdi/font/css/materialdesignicons.min.css">
+    <!-- Nosso CSS -->
+    <link type="text/css" rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <span id="title">TODOs</span>
+    <div class="wrap-todo">
+      <input type="text" id="task-input">
+      <div class="wrap-add-button">
+        <span class="divider"></span>
+        <i class="mdi mdi-plus" id="add-button"></i>
+      </div>
+    </div>
+    <div class="todo-list">
+      <div class="todo-item">
+        <div class="todo-status">
+          <i class="mdi mdi-checkbox-blank-circle-outline"></i>
+        </div>
+        <div class="todo-text">Terminar slides de JS</div>
+      </div>
+    </div>
+    <!-- Script do Material Design Lite -->
+    <script src="./node_modules/material-design-lite/material.min.js"></script>
+    <!-- Nosso Script -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

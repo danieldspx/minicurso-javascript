@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+	max-width: 100vw;
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	background: #ECE9E6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#title{
+	display: grid;
+	grid-template-columns: auto;
+	padding: 20px;
+	font-size: 50px;
+	opacity: 0.5;
+	color: #3c3c3c;
+	text-align: center;
+}
+
+.wrap-todo{
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.wrap-todo #task-input{
+	display: inline-block;
+	font-size: 40px;
+	width: 100%;
+	padding-right: 64px;
+	text-transform: capitalize;
+	height: 60px;
+	border-radius: 30px;
+	padding-left: 30px;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	color: #3c3c3c;
+}
+.wrap-todo .wrap-add-button{
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+}
+
+.wrap-todo .wrap-add-button *{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.wrap-todo .wrap-add-button .divider{
+	height: 45px;
+	width: 1px;
+	background-color: #dbdbdb;
+	margin-right: 10px;
+}
+
+#add-button{
+	font-size: 30px;
+	font-weight: bold;
+	margin-right: 10px;
+	cursor: pointer;
+	color: #3c3c3c;
+}
+
+.todo-list{
+		display: grid;
+		grid-template-columns: auto;
+		justify-items: center;
+		margin-top: 50px;
+		width: 100%;
+}
+
+.todo-item{
+	display: block;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+	background-color: white;
+	padding: 20px 10px;
+	width: 60%;
+	color: #3c3c3c;
+	font-size: 30px;
+}
+
+.todo-item *{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.todo-status{
+	margin-right: 15px;
+	opacity: 0.8;
+	cursor: pointer;
+}
