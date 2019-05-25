@@ -32,7 +32,6 @@ body{
 	font-size: 40px;
 	width: 100%;
 	padding-right: 64px;
-	text-transform: capitalize;
 	height: 60px;
 	border-radius: 30px;
 	padding-left: 30px;
@@ -86,11 +85,31 @@ body{
 	width: 60%;
 	color: #3c3c3c;
 	font-size: 30px;
+	transition: box-shadow .3s;
+}
+
+.todo-item:hover{
+	box-shadow: 0 6px 6px 0 rgba(0,0,0,.14), 0px 2px 0px -2px rgba(0,0,0,.2), 0 3px 6px 0 rgba(0,0,0,.12);
 }
 
 .todo-item *{
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.todo-item.critical{
+	color: white;
+	background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+}
+
+.todo-item.warning{
+	color: #424242;
+	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(252,255,8,1) 0%, rgba(255,223,12,1) 50.2%, rgba(255,201,4,1) 90% );
+}
+
+.todo-item.normal{
+	color: #424242;
+	background-image: linear-gradient( 117.5deg,  rgba(89,233,162,1) 20.5%, rgba(29,209,185,1) 100.2% );
 }
 
 .todo-status{
