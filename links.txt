@@ -1,3 +1,10 @@
 https://gradienthunt.com      //Gradientes
 https://uigradients.com      //
 https://webgradients.com    //
+
+Benchmark insert HTML: https://i.stack.imgur.com/2DTDm.png
+ES6: http://www.ecma-international.org/ecma-262/6.0/
+
+https://medium.com/@oieduardorabelo/javascript-for-vs-foreach-vs-for-in-vs-for-of-44b8beffbfa0
+
+https://tylermcginnis.com/javascript-visualizer/

@@ -5,12 +5,10 @@
     <title>Projeto Final</title>
     <!-- Incluir o normalize.css -->
     <link type="text/css" rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
-    <!-- Incluir os icontes do Material Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- Incluir o Material Design Lite -->
-    <link rel="stylesheet" href="./node_modules/material-design-lite/material.min.css">
     <!-- Icones MDI -->
     <link type="text/css" rel="stylesheet" href="./node_modules/@mdi/font/css/materialdesignicons.min.css">
+    <!-- Animate CSS -->
+    <link type="text/css" rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
     <!-- Nosso CSS -->
     <link type="text/css" rel="stylesheet" href="./css/index.css">
   </head>
@@ -26,13 +24,18 @@
     <div class="todo-list">
       <div class="todo-item warning">
         <div class="todo-status">
-          <i class="mdi mdi-checkbox-blank-circle-outline"></i>
+          <i class="mdi mdi-checkbox-blank-circle-outline btn-mark-done-todo"></i>
         </div>
         <div class="todo-text">Terminar slides de JS</div>
+        <div class="todo-actions">
+          <i class="mdi mdi-alert-circle btn-toggle-urgency"></i>
+          <i class="mdi mdi-delete btn-todo-delete"></i>
+        </div>
       </div>
     </div>
-    <!-- Script do Material Design Lite -->
-    <script src="./node_modules/material-design-lite/material.min.js"></script>
+    <div id="animation" style="height: 150px"></div>
+    <!-- Lottie -->
+    <script src="./node_modules/lottie-web/build/player/lottie.min.js"></script>
     <!-- Nosso Script -->
     <script src="./js/index.js"></script>
   </body>
